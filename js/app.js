@@ -1,8 +1,11 @@
 //console.log();, alert();,  prompt();
-// console.log('console log Test');
-// alert('alert');
-// prompt('請輸入年齡（最少18）', '20');
-// window.alert('window alert');
+/*
+console.log('console log Test');
+alert('alert');
+window.alert('window alert');
+prompt('請輸入年齡（最少18）', '20');
+*/
+
 
 //var, let , const
 // var a = 10;
