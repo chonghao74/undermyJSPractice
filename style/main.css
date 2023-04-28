@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body section.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../photos/Google-Pixel-Tablet-1.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -99;
+}
+
+body section.bg div.bg_filter {
+  position: absolute;
+  z-index: -90;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.8;
+}
+
+main input[type="text"] {
+  color: aquamarine;
+  padding: 0 10px;
+}
+
+main section.sec2 {
+  background-color: aqua;
+  opacity: 0.5;
+}
+
+main section.sec2 .commlab {
+  display: block;
+  color: red;
+  font-size: 2rem;
+}
+
+main section.sec2 .lab2 {
+  color: yellow;
+  font-size: 4rem;
+}
+
+main section.sec3 {
+  position: fixed;
+  right: 5vw;
+  bottom: 10vh;
+}
+
+main section.sec3 button.btn {
+  width: 30px;
+  height: 30px;
+}
+
+main section.sec4 div.flexTest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: gold;
+  height: 400px;
+  margin: 0px 100px;
+  justify-content: center;
+}
+
+main section.sec4 div.flexTest .flexgrow {
+  height: 200px;
+  width: 500px;
+}
+
+main section.sec4 div.flexTest .grow_test1 {
+  background-color: red;
+}
+
+main section.sec4 div.flexTest .grow_test2 {
+  background-color: orange;
+}
+
+main section.sec4 div.flexTest .grow_test3 {
+  background-color: yellow;
+}
+/*# sourceMappingURL=main.css.map */

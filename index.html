@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JS Practice" />
+    <meta name="keywords" content="js, javascript" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" sizes="192x192" href="./photos/js.png" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>JSPractice</title>
+  </head>
+  <body>
+    <section class="bg">
+      <div class="bg_filter"></div>
+    </section>
+
+    <header>
+      <h1 id="headerTitle">JS Tile Practice</h1>
+      <p class="second">this js p tag.</p>
+      <p class="second">this js p tag2.</p>
+      <button class="btnStop" onclick="stop()">close</button>
+      <br />
+      <br />
+      <br />
+    </header>
+
+    <main>
+      <section class="sec1">
+        <form action="" method="GET">
+          <label for="lab_name">Name</label>
+          <input
+            id="lab_name"
+            type="text"
+            title="必要輸入喔"
+            placeholder="input your name, please."
+            name="name"
+            required
+          />
+          <br />
+          <label for="lab_food">喜歡的食物</label>
+          <input type="checkbox" name="food" required />Fish
+          <input type="checkbox" name="food" />Pork
+          <input type="checkbox" name="food" />vagetable
+          <div>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+        <br />
+      </section>
+
+      <section class="sec2">
+        <label for="" class="commlab lab1">1</label>
+        <label for="" class="commlab lab2">2</label>
+        <label for="" class="commlab lab3">3</label>
+        <label for="" class="commlab lab4">4</label>
+        <br />
+      </section>
+
+      <section class="sec3">
+        <button class="btn">+</button>
+      </section>
+
+      <section class="sec4">
+        <div class="flexTest">
+          <div class="flexgrow grow_test1"></div>
+          <div class="flexgrow grow_test2"></div>
+          <div class="flexgrow grow_test3"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./js/app.js"></script>
+  <script src="./js/appNotionPractice.js"></script>
+  <script src="./js/appDOM.js"></script>
+  <noscript>
+    <label for="">此瀏覽器不支援JS</label>
+  </noscript>
+</html>
