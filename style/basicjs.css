@@ -7,4 +7,38 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+body header div {
+  position: fixed;
+  top: 0px;
+  background-color: #000;
+  width: 100%;
+}
+
+body header div label {
+  color: antiquewhite;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+body main {
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body main section #main-sec-btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+}
+
+body main section div button {
+  font-size: 20px;
+  padding: 0px 30px;
+  height: 40px;
+}
 /*# sourceMappingURL=basicjs.css.map */
