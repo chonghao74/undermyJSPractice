@@ -7,16 +7,60 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="../dist/style/basicjs.min.css" />
     <link rel="icon" sizes="192x192" href="../icons/js.png" />
     <title>BasicJS</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div>
+        <label for="">JS Basic practice!</label>
+      </div>
+    </header>
     <main>
+      <!-- Script Practice console, alert, promp-->
       <section>
-        <label for="">Practice console.log();, alert();, prompt();</label>
+        <label for="">Practice console, alert, prompt</label>
+        <br />
+        <button id="main-sec-btn" onclick="showConsoleLog()">
+          console.log()
+        </button>
+        <button id="main-sec-btn" onclick="showAlter()">alert()</button>
+        <button id="main-sec-btn" onclick="showBasicPromt()">B-prompt()</button>
+        <button id="main-sec-btn" onclick="showAdvanedPromt()">
+          A-prompt()
+        </button>
+        <button id="main-sec-btn" onclick="showPromtAndAlter()">
+          promptAndAlter()
+        </button>
       </section>
+      <br />
+      <!-- Primitive Data Type ，NaN，typeof 用法-->
+      <section>
+        <div>
+          <button onclick="testPrimitive_DataType_NaN_typeof()">
+            Primitive Data Type ，NaN，typeof 用法，看 console.log
+          </button>
+          <button onclick="testNumber()">test Number</button>
+          <button onclick="testStringSliceAndSplit()">test String</button>
+        </div>
+      </section>
+      <br />
+      <!-- Function -->
+      <div>
+        <div>
+          <button onclick="testNamedFunction()">Named Function</button>
+        </div>
+        <div>
+          <button onclick="testNamedFunction()">Named Function</button>
+        </div>
+      </div>
     </main>
+
+    <!-- Script import-->
+    <script src="../js/basic-js.js"></script>
+    <noscript>
+      <label for="">此瀏覽器不支援JS</label>
+    </noscript>
   </body>
 </html>
