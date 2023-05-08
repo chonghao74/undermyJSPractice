@@ -8,6 +8,12 @@ html {
   box-sizing: border-box;
 }
 
+body button {
+  font-size: 20px;
+  padding: 0px 30px;
+  height: 40px;
+}
+
 body header div {
   position: fixed;
   top: 0px;
@@ -32,13 +38,6 @@ body main {
 body main section #main-sec-btn {
   display: block;
   width: 200px;
-  height: 40px;
-  font-size: 20px;
-}
-
-body main section div button {
-  font-size: 20px;
-  padding: 0px 30px;
   height: 40px;
 }
 /*# sourceMappingURL=basicjs.css.map */

@@ -18,14 +18,17 @@
       </div>
     </header>
     <main>
-      <!-- Script Practice console, alert, promp-->
+      <!-- Script Practice console, alert, confirm, promp-->
       <section>
-        <label for="">Practice console, alert, prompt</label>
+        <label for="">Practice console, alert, confirm, prompt</label>
         <br />
         <button id="main-sec-btn" onclick="showConsoleLog()">
           console.log()
         </button>
         <button id="main-sec-btn" onclick="showAlter()">alert()</button>
+        <button id="main-sec-btn" onclick="showConfirmAlter()">
+          confirm()
+        </button>
         <button id="main-sec-btn" onclick="showBasicPromt()">B-prompt()</button>
         <button id="main-sec-btn" onclick="showAdvanedPromt()">
           A-prompt()
@@ -35,8 +38,10 @@
         </button>
       </section>
       <br />
-      <!-- Primitive Data Type ，NaN，typeof 用法-->
+      <!-- Primitive Data Type-->
       <section>
+        <label for="">Primitive Data Type</label>
+        <br />
         <div>
           <button onclick="testPrimitive_DataType_NaN_typeof()">
             Primitive Data Type ，NaN，typeof 用法，看 console.log
@@ -47,14 +52,89 @@
       </section>
       <br />
       <!-- Function -->
-      <div>
+      <section>
+        <label for="">Function</label>
+        <br />
         <div>
           <button onclick="testNamedFunction()">Named Function</button>
         </div>
         <div>
-          <button onclick="testNamedFunction()">Named Function</button>
+          <button onclick="testAnonymous_ArrowFunction_Lambda()">
+            testAnonymous_ArrowFunction_Lambda
+          </button>
         </div>
-      </div>
+        <div>
+          <button onclick="restParamater(1)">restParamater11(...list)</button>
+        </div>
+        <div>
+          <button onclick="restParamater(1,2)">restParamater12(...list)</button>
+        </div>
+        <div>
+          <button onclick="restParamater2(3,1,5,7,9)">
+            restParamater12(input, ...list)
+          </button>
+        </div>
+        <div>
+          <button onclick="testDefaultParameter1(1)">
+            (1)testDefaultParameter1(input1, input2 = 1)
+          </button>
+          <br />
+          <button onclick="testDefaultParameter2(1,4)">
+            (1,4)testDefaultParameter2(input1, input2 = '3')
+          </button>
+          <br />
+          <button onclick="testDefaultParameter3(1)">
+            (1)testDefaultParameter3(input1, input2 = function ()
+            {console.log('Show Log Default')})
+          </button>
+          <br />
+          <button
+            onclick="testDefaultParameter3(1, () => {console.log('ddddd')})"
+          >
+            (1, () => {console.log('ddddd')})testDefaultParameter3(input1,
+            input2 = function () {console.log('Show Log Default')})
+          </button>
+        </div>
+      </section>
+      <br />
+      <!-- Statement and condition -->
+      <section>
+        <label for="">Statement and condition</label>
+        <br />
+        <button onclick="testIfElseAndSwitch()">if...else and Switch</button>
+      </section>
+      <br />
+      <!-- Loop-->
+      <section>
+        <label for="">Loop</label>
+        <br />
+        <div>
+          <button onclick="testForLoop1()">For Loop1</button>
+          <button onclick="testForLoop2()">For Loop2</button>
+        </div>
+        <div>
+          <button onclick="testForEachByAnonymous()">
+            forEach1ByAnonymous
+          </button>
+          <button onclick="testForEachByArrowOrLambda()">
+            forEach2ByArrowOrLambda
+          </button>
+        </div>
+      </section>
+      <br />
+      <!-- setInterval()、clearInterval()、setTimeout() -->
+      <section>
+        <label for="">Advanced Function</label>
+        <div>
+          <div>
+            <button onclick="testSetInterval()">setInterval()</button>
+            <button onclick="testClearInterval()">clearInterval()</button>
+          </div>
+          <button onclick="testSetIntervalAndClearInterval()">
+            setInterval()+clearInterval()
+          </button>
+        </div>
+      </section>
     </main>
 
     <!-- Script import-->
