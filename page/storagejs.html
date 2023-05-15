@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <link rel="icon" sizes="192x192" href="../icons/hosting.png" />
+    <link rel="stylesheet" href="" />
+    <title>Storage</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div>
+          <button onclick="tesSetLocalStorage()">setLocalStorage</button>
+          <button onclick="testRemoveLocalStorage()">removeLocalStorage</button>
+          <button onclick="testClearLocalStorage()">clearLocalStorage</button>
+        </div>
+        <div>
+          <button onclick="testSetSessionStorage()">setSessionStorage</button>
+          <button onclick="testRemoveSessionStorage()">
+            remoceSessionStorage
+          </button>
+          <button onclick="testClearSessionStorage()">
+            clearSessionStorage
+          </button>
+        </div>
+        <div>
+          <button onclick="testObject_Array_BooleanInsertStorage()">
+            StorageOnlyString
+          </button>
+          <button onclick="testObject_Array_BooleanToJSON()">
+            UseJsonProcessObject_Array_Boolean
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="../js/storage.js"></script>
+
+  <noscript>
+    <label for="">此瀏覽器不支援JS</label>
+  </noscript>
+</html>

@@ -1,7 +1,17 @@
-//console.log();, alert();, confirm();, prompt(); 
+//console;, alert();, confirm();, prompt(); 
 function showConsoleLog() {
     console.log('console log Test');
     // window.console.log('console log Test');
+}
+
+function showConsoleError() {
+    console.error('console error Test');
+    // window.console.error('console error Test');
+}
+
+function showConsoleWarn() {
+    console.warn('console warn Test');
+    // window.console.warn('console warn Test');
 }
 
 function showAlter() {
