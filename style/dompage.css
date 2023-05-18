@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 30px;
+  color: brown;
+  background-color: cornsilk;
+}
+
+section#sec4_append {
+  margin-top: 10px;
+  padding: 0 20px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+section#sec4_append div#sec4_div_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sec4_div_content {
+  width: 300px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.sec4_div_content img {
+  width: 300px;
+}
+
+.sec4_p1 {
+  color: red;
+  font-size: 2vw;
+}
+
+.sec4_p2 {
+  background-color: azure;
+}
+
+.test_classlist_method {
+  color: blue;
+  font-size: 20px;
+}/*# sourceMappingURL=dompage.css.map */
