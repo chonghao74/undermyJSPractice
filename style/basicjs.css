@@ -31,7 +31,7 @@ body main {
   padding-left: 10px;
   padding-right: 10px;
 }
-body main section #main-sec-btn {
+body main section .main-sec-btn {
   display: block;
   width: 200px;
   height: 40px;
