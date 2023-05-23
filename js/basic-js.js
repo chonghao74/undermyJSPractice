@@ -261,3 +261,175 @@ function testSetIntervalAndClearInterval() {
         count -= 2000;
     }, 2000);
 }
+
+
+//Advance Practice
+function arrayPlusConcat() {
+    let arrayA = ["1", 2, 3];
+    let arrayB = [4, 5, 6];
+
+    console.log(arrayA + arrayB);
+    console.log(arrayA.concat(arrayB));
+}
+
+function claPlusDataSpreadOperator(...objectData) {
+    let result = 0;
+    objectData.forEach(value => {
+        if (!isNaN(value / 3) && (typeof value) != "string") {
+            result += value;
+        }
+    })
+
+    console.log(result);
+}
+
+function arrayPlusSpreadOperator() {
+    let arrayA = ["1", 2, 3];
+    let arrayB = [4, 5, 6];
+
+    console.log([...arrayA, ...arrayB]);
+}
+
+
+function arrayAdvancedMap() {
+    let arrayA = [1, 2, 3, 4, "5", 6];
+    let arrayMap = arrayA.map(value => {
+        if ((typeof value) == "string") {
+            value = "String_" + value;
+        }
+        else if ((typeof value) == "number" && !isNaN(value)) {
+            value = value ** 2;
+        }
+
+        return value;
+
+    });
+
+    console.log("Map -> " + arrayMap);
+}
+
+function arrayAdvancedFindFilter() {
+    let arrayA = [1, 2, 3, 4, "String", 6];
+    let arrayObjectB = [
+        { age: 18 }, { age: 10 }, { age: 5 }];
+    let arrayFind = arrayA.find(value => {
+        return value > 3;
+    })
+
+    let arrayFilter = arrayA.filter(value => {
+        return value > 3;
+    })
+
+    let arrayNotFind = arrayA.find(value => {
+        return value > 10;
+    })
+
+    let arrayNotFilter = arrayA.filter(value => {
+        return value > 10;
+    })
+
+    console.log(arrayFind);
+    console.log(arrayFilter);
+    console.log(arrayNotFind);
+    console.log(arrayNotFilter);
+}
+function arrayAdvancedSomeEvery() {
+    let arrayA = [1, 2, 3, 4, 5, 6];
+    let arrayObjectB = [
+        { age: 18 }, { age: 10 }, { age: 5 }];
+
+    let arraySome = arrayA.some(value => {
+        return value > 3;
+    })
+
+    let arrayEvery = arrayA.every(value => {
+        return value > 0;
+    })
+
+    let arrayNotSome = arrayA.some(value => {
+        return value > 10;
+    })
+
+    let arrayNoEvery = arrayA.every(value => {
+        return value > 10;
+    })
+
+    console.log(arraySome);
+    console.log(arrayEvery);
+    console.log(arrayNotSome);
+    console.log(arrayNoEvery);
+}
+
+function arrayAdvancedSort() {
+    let a = [1, 3, 10, 9, 5];
+    let b = ["banana", "grapes", "Apple", "apple", "Banana"];
+    let c = [1, 3, 10, 9, 5, 44];
+    let d = [1, 3, 10, 9, 5, 44];
+    let e = ["1", "11", "111", "111111111", "111111111"];
+    let f = ["1111", "1", "111", "11", "111111111"];
+    console.log(a);
+    console.log(a.sort());
+    console.log(b);
+    console.log(b.sort());
+
+    console.log(c);
+    console.log("小到大");
+    console.log(c.sort((a, b) => {
+        return a - b;
+    }));
+    console.log("大到小");
+    console.log(d.sort((a, b) => {
+        return b - a;
+    }));
+
+    console.log(" ");
+    console.log(e);
+    console.log("string length 小到大");
+    console.log(e.sort((a, b) => {
+        return a.length - b.length;
+    }));
+    console.log(" ");
+    console.log(f);
+    console.log("string length 大到小");
+    console.log(f.sort((a, b) => {
+        return b.length - a.length;
+    }));
+
+
+}
+
+function forOfLoop() {
+    let arrayA = [1, 2, 3, 4];
+    for (let i = 0; i < arrayA.length; i++) {
+        console.log(arrayA[i]);
+    }
+
+    for (let value of arrayA) {
+        console.log(value);
+    }
+
+    arrayA.forEach(value => {
+        console.log(value);
+    });
+
+}
+
+function forInLoop() {
+    let arrayA = [1, 2, 3, 4];
+    let objectB = {
+        id: 123,
+        gender: "male",
+        age: 18
+    };
+
+    for (let index in arrayA) {
+        console.log(index + " : " + arrayA[index]);
+    }
+
+    for (let key in objectB) [
+        console.log(key + " : " + objectB[key])
+    ]
+}
+
+
+

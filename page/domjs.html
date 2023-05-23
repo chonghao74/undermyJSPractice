@@ -7,46 +7,51 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
-    <link rel="icon" sizes="192x192" href="" />
-    <link rel="stylesheet" href="../icons/documents.png" />
+    <link rel="icon" sizes="192x192" href="../icons/documents.png" />
     <link rel="stylesheet" href="../dist/style/dompage.min.css" />
     <title>DOM</title>
   </head>
   <body>
-    <!-- children，childNode -->
-    <label for="">children，childNode</label>
-    <section id="sec1_child">
-      <h1 id="first">My First H1</h1>
-      <h1 class="second">My Second H1</h1>
-      <p class="second">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
-        placeat.
-      </p>
-      <p class="second">Lorem ipsum dolor sit amet.</p>
-    </section>
-    <!-- parent -->
-    <br /><label for="">parent</label><br />
-    <section id="sec2_parent">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, itaque.
-      </p>
-    </section>
-    <!-- Inner -->
-    <br /><label for="">Inner</label><br />
-    <section id="sec3_inner">
-      <a id="a1_html" href="#" target="_self" rel="noopener noreferrer"> </a>
-      <a id="a1_text" href="#" target="_self" rel="noopener noreferrer"> </a>
-      <a id="a2_html" href="#" target="_self" rel="noopener noreferrer"> </a>
-      <a id="a2_text" href="#" target="_self" rel="noopener noreferrer"> </a>
-      <h1></h1>
-      <button onclick="setIntervalGo()">setIntervalGo</button>
-      <button onclick="clearIntervalGo()">clearIntervalGo</button>
-    </section>
-    <!-- append-->
-    <br /><label for="">append</label><br />
-    <section id="sec4_append">
-      <button onclick="appendChildTest()">appendChildTest</button>
-      <!-- 
+    <nav>
+      <div id="nav_div1"></div>
+      <div id="nav_div2"></div>
+    </nav>
+    <main>
+      <!-- children，childNode -->
+      <section id="sec1_child">
+        <label id="lab_sec1_child" for="">children，childNode</label>
+        <h1 id="first">My First H1</h1>
+        <h1 class="second">My Second H1</h1>
+        <p class="second">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
+          placeat.
+        </p>
+        <p class="second">Lorem ipsum dolor sit amet.</p>
+      </section>
+      <!-- parent -->
+      <br /><label for="">parent</label><br />
+      <section id="sec2_parent">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+          itaque.
+        </p>
+      </section>
+      <!-- Inner -->
+      <br /><label for="">Inner</label><br />
+      <section id="sec3_inner">
+        <a id="a1_html" href="#" target="_self" rel="noopener noreferrer"> </a>
+        <a id="a1_text" href="#" target="_self" rel="noopener noreferrer"> </a>
+        <a id="a2_html" href="#" target="_self" rel="noopener noreferrer"> </a>
+        <a id="a2_text" href="#" target="_self" rel="noopener noreferrer"> </a>
+        <h1></h1>
+        <button onclick="setIntervalGo()">setIntervalGo</button>
+        <button onclick="clearIntervalGo()">clearIntervalGo</button>
+      </section>
+      <!-- append-->
+      <br /><label for="">append</label><br />
+      <section id="sec4_append">
+        <button onclick="appendChildTest()">appendChildTest</button>
+        <!-- 
       <div id="sec4_div_block">
         <div class="sec4_div_content">
           <img src="../photos/js.png" alt="" />
@@ -65,38 +70,46 @@
           >
         </div>
       </div>
-      -->
-    </section>
-    <!-- classList -->
-    <br />
-    <label for="">classList</label><br />
-    <section id="sec4_classList">
-      <p id="test_p1" class="sec4_p1 sec4_p2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        atque?
-      </p>
-      <p id="test_p2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        atque?
-      </p>
-      <div>
-        <button onclick="classList_Add()">classList_Add</button>
-        <button onclick="classList_Remove()">classList_Remove</button>
-        <button onclick="classList_Toggle()">classList_toggle</button>
-        <button onclick="classList_Contain()">classList_contain</button>
-      </div>
-    </section>
-    <!-- getAttribute -->
-    <br /><label for="">getAttribute</label><br />
-    <section id="sec5_getAttribute">
-      <a href="#" target="_self" rel="noopener noreferrer"> come back top</a>
-    </section>
-    <!-- Tag.querySelector、 Tag.querySelectorAll-->
-    <br /><label for="">Tag.querySelector、 Tag.querySelectorAll</label><br />
-    <section id="sec6_querySelector">
-      <section id="sec6_querySelector_content"></section>
-    </section>
-    <!-- remove -->
+      --></section>
+      <!-- classList -->
+      <br />
+      <label for="">classList</label><br />
+      <section id="sec4_classList">
+        <p id="test_p1" class="sec4_p1 sec4_p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          atque?
+        </p>
+        <p id="test_p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          atque?
+        </p>
+        <div>
+          <button onclick="classList_Add()">classList_Add</button>
+          <button onclick="classList_Remove()">classList_Remove</button>
+          <button onclick="classList_Toggle()">classList_toggle</button>
+          <button onclick="classList_Contain()">classList_contain</button>
+        </div>
+      </section>
+      <!-- getAttribute -->
+      <br /><label for="">getAttribute</label><br />
+      <section id="sec5_getAttribute">
+        <a href="#" target="_self" rel="noopener noreferrer"> come back top</a>
+      </section>
+      <!-- Tag.querySelector、 Tag.querySelectorAll-->
+      <br /><label for="">Tag.querySelector、 Tag.querySelectorAll</label><br />
+      <section id="sec6_querySelector">
+        <section id="sec6_querySelector_content"></section>
+      </section>
+      <!-- remove -->
+      <br /><label for="">Tag.remove</label><br />
+      <section id="sec7_Tag.remove"></section>
+      <!-- style -->
+      <br /><label for="">Style</label><br />
+      <section id="sec8_Stytle">
+        <button id="clear" onclick="clearStyle()">clearStyle</button>
+        <button id="style" onclick="changeStyle()">changeStyle</button>
+      </section>
+    </main>
   </body>
   <script src="../js/appDOM.js"></script>
   <noscript>
