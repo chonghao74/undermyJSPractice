@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import '../scss/utility.scss';
+
+table{
+  border-collapse:collapse
+}
+
+td, th {
+  border: 2px solid black;
+  padding: 10px 20px;
+}

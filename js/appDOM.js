@@ -69,7 +69,6 @@
 // objectTest.getNameNormalFunc();
 // objectTest.getNameArrowFun();
 
-
 //6 forEach、map
 //forEach
 // let aArray = [1, 2, 3, 4];
@@ -132,7 +131,6 @@
 //     }, 1000);
 // }
 
-
 // function clearIntervalGo() {
 //     clearInterval(setIntervalData);
 // }
@@ -144,7 +142,6 @@
 //     h1Tag.innerHTML = "I'm a super Hero. ";
 //     section.appendChild(h1Tag);
 // }
-
 
 //10 classList
 // let pTag1 = document.querySelector('section#sec4_classList p#test_p1');
@@ -193,34 +190,37 @@
 let count = true;
 
 function clearStyle() {
-    let button = document.querySelector("section#sec8_Stytle").querySelector("button#style");
-    count = true;
+  let button = document
+    .querySelector("section#sec8_Stytle")
+    .querySelector("button#style");
+  count = true;
 
-    button.style = "";
+  button.style = "";
 }
 
 function changeStyle() {
-    let button = document.querySelector("section#sec8_Stytle").querySelector("button#style");
-    console.log(button);
+  let button = document
+    .querySelector("section#sec8_Stytle")
+    .querySelector("button#style");
+  console.log(button);
 
-    if (count) {
-        count = false;
-        button.style.fontSize = "2vw";
-        button.style.backgroundColor = "red";
-        button.style.padding = " 10px 20px 30px 40px";
-    }
-    else {
-        count = true;
-        button.style = "font-size : 5vw; background-color : blue; padding : 40px 30px 20px 10px;"
-        // button.style.fontSize = "5vw";
-        // button.style.backgroundColor = "blue";
-        // button.style.padding = " 40px 30px 20px 10px";
-    }
+  if (count) {
+    count = false;
+    button.style.fontSize = "2vw";
+    button.style.backgroundColor = "red";
+    button.style.padding = " 10px 20px 30px 40px";
+  } else {
+    count = true;
+    button.style =
+      "font-size : 5vw; background-color : blue; padding : 40px 30px 20px 10px;";
+    // button.style.fontSize = "5vw";
+    // button.style.backgroundColor = "blue";
+    // button.style.padding = " 40px 30px 20px 10px";
+  }
 
-
-    console.log(button.style.fontSize);
-    console.log(button.style.backgroundColor);
-    console.log(button.style.padding);
+  console.log(button.style.fontSize);
+  console.log(button.style.backgroundColor);
+  console.log(button.style.padding);
 }
 
 let section = document.querySelector("main section#sec1_child");
@@ -228,24 +228,14 @@ let div1 = document.querySelector("nav div#nav_div1");
 let div2 = document.querySelector("nav div#nav_div2");
 
 window.addEventListener("scroll", (e) => {
-    if (window.pageYOffset == 0)
-        if (window.scrollY == 0) {
-            div1.style = "visibility: visible;"
-            div2.style = "visibility: hidden;"
-            section.style = "margin-top: 80px;";
-        }
-        else {
-            div1.style = "visibility: hidden;";
-            div2.style = "visibility: visible;"
-            section.style = "margin-top: 40px;";
-        }
-
-})
-
-
-
-
-
-
-
-
+  if (window.pageYOffset == 0)
+    if (window.scrollY == 0) {
+      div1.style = "visibility: visible;";
+      div2.style = "visibility: hidden;";
+      section.style = "margin-top: 80px;";
+    } else {
+      div1.style = "visibility: hidden;";
+      div2.style = "visibility: visible;";
+      section.style = "margin-top: 40px;";
+    }
+});

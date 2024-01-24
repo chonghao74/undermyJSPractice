@@ -33,6 +33,7 @@ body header {
   width: 100%;
   height: 100px;
   background-color: black;
+  z-index: 9999;
 }
 
 body #headerTitle {
@@ -62,6 +63,7 @@ body #div-nav-header .div-nav-contain a:hover {
 
 body main {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 body main input[type="text"] {

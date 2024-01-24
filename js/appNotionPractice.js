@@ -313,6 +313,6 @@ Person.prototype = {
 let Tim = new Person("Tim");
 window.console.log(Tim.prototype);
 console.log(Tim.constructor);
-Tim.prototype.sayName;
+// Tim.prototype.sayName;
 
 // if (Tim.constructor === Person)
