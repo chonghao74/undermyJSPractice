@@ -16,6 +16,7 @@ btnNPM.addEventListener("click", async (e) => {
   let apiData;
 
   try {
+    /*
     await userRequest
       .get("/v1/rest/collection/search/")
       .then(function (response) {
@@ -28,8 +29,8 @@ btnNPM.addEventListener("click", async (e) => {
         // handle error
         console.log(error);
       });
+      */
 
-    /*
     await userRequest2
       .get("/proxy/v1/rest/collection/search/")
       .then(function (response) {
@@ -48,7 +49,6 @@ btnNPM.addEventListener("click", async (e) => {
         // handle error
         console.log(error);
       });
-      */
   } catch (e) {
     console.log(error);
   } finally {
