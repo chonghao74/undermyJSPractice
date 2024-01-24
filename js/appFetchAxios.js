@@ -27,6 +27,7 @@ btnNPM.addEventListener("click", async (e) => {
       })
       .catch(function (error) {
         // handle error
+        alert('userRequest');
         console.log(error);
       });
       */
@@ -47,6 +48,7 @@ btnNPM.addEventListener("click", async (e) => {
       })
       .catch(function (error) {
         // handle error
+        alert("userRequest2 CORS");
         console.log(error);
       });
   } catch (e) {
